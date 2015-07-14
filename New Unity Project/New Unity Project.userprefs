@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Nykr\NScripts\EventActivater.cs">
+    <Files>
+      <File FileName="Assets\Nykr\NScripts\Event.cs" Line="35" Column="35" />
+      <File FileName="Assets\Nykr\NScripts\PlayerEventChecker.cs" Line="71" Column="40" />
+      <File FileName="Assets\Nykr\NScripts\EventActivater.cs" Line="21" Column="55" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
