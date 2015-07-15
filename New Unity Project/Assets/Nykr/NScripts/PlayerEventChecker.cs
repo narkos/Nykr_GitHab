@@ -66,7 +66,7 @@ public class PlayerEventChecker : MonoBehaviour {
 	bool CheckCollision(){
 		potColliders = Physics.OverlapSphere (thisTransform.position, collisionRadius);
 		int i = 0;
-		bool checker = false;
+		//bool checker = false;
 		while (i < potColliders.Length) {
 			if(potColliders [i].tag == "Event"){
 				currentInteractEvent = potColliders[i].GetComponent<Event>();
