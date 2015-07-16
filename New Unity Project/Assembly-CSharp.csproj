@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Nykr\NScripts\Event.cs" />
      <Compile Include="Assets\Nykr\NScripts\EventActivater.cs" />
+     <Compile Include="Assets\Nykr\NScripts\EventDoor.cs" />
      <Compile Include="Assets\Nykr\NScripts\PlayerCollisionEvent.cs" />
      <Compile Include="Assets\Nykr\NScripts\PlayerEventChecker.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

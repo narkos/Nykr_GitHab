@@ -36,6 +36,7 @@ public class PlayerEventChecker : MonoBehaviour {
 
 
 	void CheckForEvent(){
+
 		if (CheckRaycast () == true)
 			return;
 		if (CheckCollision () == true)
@@ -49,13 +50,9 @@ public class PlayerEventChecker : MonoBehaviour {
 		rayMiddleScreen = mainCamera.ViewportPointToRay (new Vector3 (0.5f, 0.5f, 0.5f));
 		if (Physics.Raycast (rayMiddleScreen, out hit, interactRange)) {
 			if (hit.collider.tag == "Event") {
-				currentInteractEvent = hit.collider.GetComponent<Event> ();
-				if(currentInteractEvent.is_raycastEvent == true){
+				if(hit.collider.GetComponent<Event> ().is_raycastEvent == true){
+					currentInteractEvent = hit.collider.GetComponent<Event> ();
 					return true;
-				}
-				else{
-					currentInteractEvent = null;
-					return false;
 				}
 			}
 
@@ -69,13 +66,9 @@ public class PlayerEventChecker : MonoBehaviour {
 		//bool checker = false;
 		while (i < potColliders.Length) {
 			if(potColliders [i].tag == "Event"){
-				currentInteractEvent = potColliders[i].GetComponent<Event>();
-				if(currentInteractEvent.is_collideEvent == true){
+				if(potColliders[i].GetComponent<Event>().is_collideEvent == true){
+					currentInteractEvent = potColliders[i].GetComponent<Event>();
 					return true;
-				}
-				else{
-					currentInteractEvent = null;
-					return false;
 				}
 			}
 			i++;
